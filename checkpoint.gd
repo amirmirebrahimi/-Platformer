@@ -1,6 +1,5 @@
 extends Area2D
 
 
-
 func _on_body_entered(body: Node2D) -> void:
-	get_tree().reload_current_scene()
+			Global.checkpoint_position = body.global_position	

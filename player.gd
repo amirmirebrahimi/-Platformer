@@ -34,7 +34,7 @@ func _physics_process(delta: float) -> void:
 		
 	if not is_on_floor():
 		anim.play("jump")
-		
+			
 
 		
 		
@@ -44,3 +44,8 @@ func _physics_process(delta: float) -> void:
 		
 		
 		
+
+
+func _ready():
+	if Global.checkpoint_position != Vector2.ZERO:
+		global_position = Global.checkpoint_position
